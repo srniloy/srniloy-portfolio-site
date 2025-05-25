@@ -1,0 +1,11 @@
+:root{
+    --bg: #0a1d30;
+    --bg2: #0a1d30;
+    --bg3: #021121;
+    --bg4: #0a1d33;
+}
+
+body{
+    background-color: var(--bg);
+}
+
