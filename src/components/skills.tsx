@@ -24,7 +24,7 @@ const Skills = () => {
         { name: "Express.js", icon: <SiExpress className="w-6 h-6 text-green-500" />, level: 85 },
         { name: "Node.js", icon: <FaNodeJs className="w-6 h-6 text-green-500" />, level: 75 },
         { name: "REST APIs", icon: <div className="text-purple-400 font-bold text-lg">API</div>, level: 70 },
-        { name: "Django", icon: <SiDjango className="w-6 h-6 text-green-500" />, level: 40 },
+        { name: "Django", icon: <SiDjango className="w-6 h-6 text-green-500" />, level: 50 },
       ]
     },
     {

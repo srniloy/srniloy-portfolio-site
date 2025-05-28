@@ -8,6 +8,16 @@ import { motion } from 'framer-motion';
 const projects = [
     {
       id: 1,
+      title: "Todo Project",
+      description: "A production-ready task management application built with Django that demonstrates essential backend development skills through practical implementation of key features",
+      category: ["django"],
+      tags: ["Django", "PostgreSQL", "Bootstrap"],
+      github: "https://github.com/srniloy/todo",
+      link: "https://todo-xamf.onrender.com/",
+      image: "/images/todo.png"
+    },
+    {
+      id: 2,
       title: "Roots2Goods",
       description: "An agro-product supply chain management system that help users to manage their business and monitored by admin. Visit github to know more.",
       category: ["react"],
@@ -17,7 +27,7 @@ const projects = [
       image: "/images/roots2goods.png"
     },
     {
-      id: 2,
+      id: 3,
       title: "SymToDoc",
       description: "SymToDoc is a React Native mobile application designed to empower users with fast, accessible, and intelligent health insights. Visit github to know more.",
       category: ["react-native", "Flask", "ml"],
@@ -27,7 +37,7 @@ const projects = [
       image: "/images/symtodoc.png"
     },
     {
-      id: 3,
+      id: 4,
       title: "UIU_PSP",
       description: "UIU_PSP is a collaborative educational web app designed to help students improve academic performance by engaging in peer-to-peer learning, question sharing, and interactive problem solving.",
       category: ["php", "mysql"],
@@ -37,7 +47,7 @@ const projects = [
       image: "/images/uiupsp.png"
     },
     {
-      id: 4,
+      id: 5,
       title: "IBOL",
       description: "IBOL (Intelligent Bioinformatics and Omics Laboratory) is a modern and informative website built to represent a cutting-edge research hub in the field of computational biology and multi-omics analysis.",
       category: ["react"],
@@ -46,16 +56,16 @@ const projects = [
       link: "https://ibol.vercel.app",
       image: "/images/ibol.png"
     },
-    {
-      id: 5,
-      title: "Quickee",
-      description: "Quickee is a simple, clean frontend web application for a restaurant, built using React. It was developed as a learning project to practice foundational concepts of modern frontend development.",
-      category: ["react"],
-      tags: ["React", "HTML", "CSS", "JS"],
-      github: "https://github.com/srniloy/quickiee",
-      link: "https://quickiee.netlify.app/",
-      image: "/images/quickee.png"
-    },
+    // {
+    //   id: 6,
+    //   title: "Quickee",
+    //   description: "Quickee is a simple, clean frontend web application for a restaurant, built using React. It was developed as a learning project to practice foundational concepts of modern frontend development.",
+    //   category: ["react"],
+    //   tags: ["React", "HTML", "CSS", "JS"],
+    //   github: "https://github.com/srniloy/quickiee",
+    //   link: "https://quickiee.netlify.app/",
+    //   image: "/images/quickee.png"
+    // },
     {
       id: 6,
       title: "Accident Detection",
@@ -120,6 +130,14 @@ const Projects = () => {
           className={`px-4 py-2 rounded-full text-sm font-medium transition ${new Set(activeFilter).has('all')  ? 'bg-indigo-600 text-white' : 'bg-[#0a1d30]/60 text-gray-300 hover:bg-[#0a1d30]/80'}`}
         >
           All Projects
+        </motion.button>
+        <motion.button 
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setActiveFilter(['django'])} 
+          className={`px-4 py-2 rounded-full text-sm font-medium transition ${new Set(activeFilter).has('django') ? 'bg-indigo-600 text-white' : 'bg-[#0a1d30]/60 text-gray-300 hover:bg-[#0a1d30]/80'}`}
+        >
+          Django
         </motion.button>
         <motion.button 
           whileHover={{ scale: 1.05 }}
