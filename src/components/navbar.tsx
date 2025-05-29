@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { AnimatedLogo } from './icons/animated-logo';
+import { PortfolioLogo } from './icons/portfolio-logo';
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,15 +25,16 @@ export const Navbar = () => {
 
   return (
     <>
+      
       {/* Show animated logo only on homepage */}
-      {pathname === '/' && <AnimatedLogo />}
+      <AnimatedLogo />
 
       <nav className="fixed w-full bg-[#0a1d30]/90 backdrop-blur-sm z-10 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-18 py-4 nav-container">
             {/* Logo in Navbar */}
             <div className="flex items-start">
-              {/* <AnimatedLogo/> */}
+              <PortfolioLogo/>
             </div>
 
             {/* Desktop Navigation */}

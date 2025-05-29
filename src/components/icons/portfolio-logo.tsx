@@ -1,4 +1,4 @@
-export function PortfolioLogo({ className = "w-10 h-10", color = "#4f46e5" }: { 
+export function PortfolioLogo({ className = "w-[56px] h-[56px] mt-[-7px] animated-logo hidden", color = "#4f46e5" }: { 
     className?: string;
     color?: string; 
   }) {
